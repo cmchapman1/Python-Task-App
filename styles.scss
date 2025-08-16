@@ -1,0 +1,87 @@
+
+// Color variables
+$primary-color: blue;
+$primary-color-hover: darkblue;
+$success-color: green;
+$success-color-hover: darkgreen;
+$title-color: black;
+// $bg-color: rgb(179, 145, 81);
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
+}
+
+.content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: wheat;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(77, 79, 52, 0.299);
+    text-align: center;
+
+    h1 {
+        color: black;
+    }
+
+    h4 {
+        color: black;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+
+        th {
+            padding: 10px;
+            border: 1px solid #18a352;
+        }
+
+        td {
+            background-color: white;
+            color: #333;
+            padding: 10px;
+            border: 1px solid #CCC;
+        }
+    }
+
+    a {
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 5px;
+        border-radius: 20px;
+        background-color: $primary-color;
+        color: #5a5ad1;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $primary-color-hover;
+        }
+    }
+
+    input[type="submit"] {
+        background-color: rgb(81, 161, 81);
+        color: white;
+        padding: 5px 12px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: $primary-color-hover;
+        }
+    }
+
+    input[type="text"] {
+        padding: 5px;
+        margin: 10px;
+        border: 0px;
+        border-radius: 5px;
+    }
+}
